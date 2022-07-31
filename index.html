@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p,
+        header,
+        main,
+        section,
+        aside,
+        footer  {
+            border: 1px solid red;         
+        }
+
+        header,
+        footer {
+            flex: 0 0 content;
+            background-color: rgb(207, 198, 198);
+        }
+
+        body {
+            display: flex;
+            flex-flow: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: stretch;
+        }
+
+        section {
+            width: 70vh;
+            display: flex;
+            justify-content: space-between; 
+            align-items: flex;
+            background-color: beige;
+        }
+
+        aside {
+            width: 30vh;
+            background-color: rgb(198, 221, 163);
+        }
+
+        .flexcontainer1 {
+            padding: 10vh;
+            align-items: flex-end;
+        }
+
+        .flexcontainer2 {
+            border: 1px solid blue;
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            height: 10vh;
+            justify-content: space-between;
+            
+        }      
+
+    </style>
+
+</head>
+
+<body>
+
+    <header class="header">
+        [Шапка страницы]
+    </header>
+
+    <main class="main">
+        <section class="section"> [Основная часть] 
+            <div class="flexcontainer1">
+                <p class="flexp"> [Еще 1] </p>
+                <p class="flexp"> [Еще 2] </p>
+                <p class="flexp"> [Еще 3] </p>
+            </div>
+        </section>
+        <aside class="aside"> [Боковая область] </aside>
+    </main>    
+           
+    <footer>
+        <div class="flexcontainer2">
+            <p class="flexp"> [Секция футера 1] </p>
+            <p class="flexp"> [Секция футера 2] </p>
+            <p class="flexp"> [Секция футера 3] </p>
+            <p class="flexp"> [Секция футера 4] </p>
+        </div>
+    </footer>  
+    
+</body>
+</html>
