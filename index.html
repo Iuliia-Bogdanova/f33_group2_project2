@@ -7,73 +7,7 @@
     <title>Document</title>
     
     <style>
-        p,
-        header,
-        main,
-        section,
-        aside,
-        footer  {
-            border: 1px solid red;  
-            text-align: center;
-            font-size: 14pt;              
-        }
         
-        header,
-        footer {
-            flex: 0 0 content;
-            background-color: rgb(207, 198, 198);           
-        }
-        
-        body {
-            display: flex;
-            flex-flow: column;
-            min-height: 100vh;
-            max-width: 100vw;
-        }
-        
-        .main {
-            flex: auto;
-            display: flex;
-            justify-content: stretch;
-        }
-        
-        .section {
-            width: 70vh;          
-            background-color: beige;
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        .aside {
-            width: 30vh;
-            background-color: rgb(198, 221, 163);
-        }
-        
-        .flexcontainer1 {
-            border: 1px solid blue;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around; 
-            align-items: flex-end;
-            align-content: flex-end;
-            display: inline-block;
-            flex-basis: 100px;
-            background: rgb(239, 208, 204);
-            height: 50px;
-            margin: 10px;
-            line-height: 50px;
-            text-align: center;
-        }
-        
-        .flexcontainer2 {
-            border: 1px solid blue;
-            display: flex;
-            flex-direction: row;
-            align-items: stretch;
-            height: 10vh;
-            justify-content: space-around;           
-        }      
         
         </style>
 
@@ -90,9 +24,9 @@
         <section class="section"> 
             [Основная часть] 
             <div class="flexcontainer1">
-                <p class="flexp"> [Еще 1] </p>
-                <p class="flexp"> [Еще 2] </p>
-                <p class="flexp"> [Еще 3] </p>
+                <p class="flex1"> [Еще 1] </p>
+                <p class="flex1"> [Еще 2] </p>
+                <p class="flex3"> [Еще 3] </p>
              </div>
         </section>
         

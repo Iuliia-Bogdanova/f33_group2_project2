@@ -1,67 +1,82 @@
-
 p,
-header,
-main,
-section,
-aside,
-footer  {
-    border: 1px solid red;  
-    text-align: center;
-    font-size: 14pt;              
-}
+        header,
+        main,
+        section,
+        aside,
+        footer  {
+            text-align: center;
+            font-size: 14pt;  
+        }
+      
+        header,
+        footer {
+            flex: 0 0 content;
+            background-color: rgb(207, 198, 198);           
+        }
 
-header,
-footer {
-    flex: 0 0 content;
-    background-color: rgb(207, 198, 198);           
-}
+        header {
+            padding: 15px;
+        }
+        
+        body {
+            display: flex;
+            flex-flow: column;
+            min-height: 100vh;
+            max-width: 100vw;
+        }
+        
+        .main {
+            flex: auto;
+            display: flex;
+            justify-content: stretch;
+        }
+        
+        .section {
+            flex-direction: column;
+            width: 70vw;          
+            background-color: beige;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .aside {
+            width: 30vw;
+            background-color: rgb(198, 221, 163);
+        }
+        
+        .flexcontainer1 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around; 
+            flex-basis: 100px;
+            margin: 10px;
+        }
+        
+        .flexcontainer2 {
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            height: 10vh;
+            justify-content: space-around;           
+        } 
+        
+        .flex1,
+        .flex2,
+        .flex3 {
+            background: rgb(241, 225, 190);
+            padding: 10px;
+        }
 
-body {
-    display: flex;
-    flex-flow: column;
-    min-height: 100vh;
-    max-width: 100vw;
-}
+        .flex1 {
+             width: 40%
+        }
 
-.main {
-    flex: auto;
-    display: flex;
-    justify-content: stretch;
-}
+        .flex3 {
+            width: 90%
+        }
 
-.section {
-    width: 70vh;          
-    background-color: beige;
-    display: flex;
-    justify-content: space-between;
-}
-
-.aside {
-    width: 30vh;
-    background-color: rgb(198, 221, 163);
-}
-
-.flexcontainer1 {
-    border: 1px solid blue;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around; 
-    align-items: flex-end;
-    display: inline-block;
-    flex-basis: 100px;
-    background: rgb(239, 208, 204);
-    height: 50px;
-    margin: 10px;
-    line-height: 50px;
-    text-align: center;
-}
-
-.flexcontainer2 {
-    border: 1px solid blue;
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    height: 10vh;
-    justify-content: space-around;           
-}      
+        .flexp {
+            background: white;
+            padding: 5px;
+        }
