@@ -1,13 +1,13 @@
-p,
+        p,
         header,
         main,
         section,
         aside,
-        footer  {
+        footer {
             text-align: center;
             font-size: 14pt;  
         }
-      
+        
         header,
         footer {
             flex: 0 0 content;
@@ -16,21 +16,21 @@ p,
 
         header {
             padding: 15px;
-        }
-        
+            }
+            
         body {
             display: flex;
             flex-flow: column;
             min-height: 100vh;
             max-width: 100vw;
         }
-        
+            
         .main {
             flex: auto;
             display: flex;
             justify-content: stretch;
         }
-        
+            
         .section {
             flex-direction: column;
             width: 70vw;          
@@ -38,12 +38,12 @@ p,
             display: flex;
             justify-content: space-between;
         }
-        
+            
         .aside {
             width: 30vw;
             background-color: rgb(198, 221, 163);
         }
-        
+            
         .flexcontainer1 {
             display: flex;
             flex-direction: row;
@@ -80,3 +80,5 @@ p,
             background: white;
             padding: 5px;
         }
+
+  
